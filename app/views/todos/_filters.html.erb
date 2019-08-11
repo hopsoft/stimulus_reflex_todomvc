@@ -1,15 +1,27 @@
 <section class="footer">
   <span class="todo-count">
-    <strong><%= @active_count %></strong> <%= "item".pluralize(@active_count) %> left
+    <strong><%= @all_todos.active.count %></strong> <%= "item".pluralize @all_todos.active.count %> left
   </span>
 
   <ul class="filters">
-    <li><a class="<%= @filter == "all" ? "selected" : nil %>" data-controller="todos" data-action="click->todos#filter" data-name="all">All</a></li>
-    <li><a class="<%= @filter == "active" ? "selected" : nil %>" data-controller="todos" data-action="click->todos#filter" data-name="active">Active</a></li>
-    <li><a class="<%= @filter == "completed" ? "selected" : nil %>" data-controller="todos" data-action="click->todos#filter" data-name="completed">Completed</a></li>
+    <li>
+      <a class="<%= "selected" if @filter == "all" %>" data-controller="todos" data-action="click->todos#filter" data-name="all">
+        All
+      </a>
+    </li>
+    <li>
+      <a class="<%= "selected" if @filter == "active" %>" data-controller="todos" data-action="click->todos#filter" data-name="active">
+        Active
+      </a>
+    </li>
+    <li>
+      <a class="<%= "selected" if @filter == "completed" %>" data-controller="todos" data-action="click->todos#filter" data-name="completed">
+        Completed
+      </a>
+    </li>
   </ul>
 
-  <% if @completed_count > 0 %>
+  <% if @all_todos.completed.any? %>
     <button class="clear-completed" data-controller="todos" data-action="click->todos#destroyCompleted">
       Clear completed
     </button>

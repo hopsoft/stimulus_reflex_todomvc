@@ -1,8 +1,7 @@
 class TodosController < ApplicationController
   def index
     @filter ||= session[:filter] || "all"
-    @todos = Todo.where(session_id: session.id).send(@filter).order(created_at: :desc)
-    @completed_count = Todo.where(session_id: session.id).completed.count
-    @active_count = Todo.where(session_id: session.id).active.count
+    @all_todos = Todo.where(session_id: session.id)
+    @filtered_todos = @all_todos.send(@filter).order(created_at: :desc)
   end
 end

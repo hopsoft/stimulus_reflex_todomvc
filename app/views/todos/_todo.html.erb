@@ -1,5 +1,16 @@
-<% if editing? todo %>
-  <%= render "todo_edit", todo: todo %>
+<% if todo.id == @edit_id %>
+  <li class="editing">
+    <input autofocus type="text" class="edit" value="<%= todo.title %>" <%= "checked" if todo.completed? %>
+      data-controller="todos" data-action="change->todos#update keypress->todos#cancelEdit blur->todos#cancelEdit" data-id="<%= todo.id %>">
+  </li>
 <% else %>
-  <%= render "todo_show", todo: todo %>
+  <li class="<%= "completed" if todo.completed? %>" data-controller="todos" data-id="<%= todo.id %>">
+    <div class="view">
+      <input type="checkbox" class="toggle" data-action="click->todos#toggle" <%= "checked" if todo.completed? %>>
+      <label data-action="click->todos#edit">
+        <%= todo.title %>
+      </label>
+      <button name="button" type="button" class="destroy" data-action="click->todos#destroy" />
+    </div>
+  </li>
 <% end %>

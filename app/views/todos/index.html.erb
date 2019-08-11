@@ -1,21 +1,20 @@
 <section class="todoapp">
   <header class="header">
     <h1>todos</h1>
-    <input class="new-todo" autofocus
-           placeholder="What needs to be done?"
-           data-controller="todos"
-           data-action="change->todos#create">
+    <input autofocus class="new-todo" placeholder="What needs to be done?" data-controller="todos" data-action="change->todos#create">
   </header>
 
-  <% if @todos.present? %>
+  <% if @all_todos.any? %>
     <section class="main">
       <input class="toggle-all" type="checkbox">
-      <label data-controller="todos" data-action="click->todos#toggleAll">Mark all as complete</label>
+      <label data-controller="todos" data-action="click->todos#toggleAll">
+        Mark all as complete
+      </label>
       <ul class="todo-list">
-        <%= render partial: "todo", collection: @todos %>
+        <%= render partial: "todo", collection: @filtered_todos %>
       </ul>
     </section>
   <% end %>
 
-  <%= render "/todos/filters" unless @completed_count.zero? && @active_count.zero? %>
+  <%= render "/todos/filters" if @all_todos.any? %>
 </section>
