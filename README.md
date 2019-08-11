@@ -2,10 +2,9 @@
 
 ## Demo
 
-Here's a demo of this application running on Heroku.
-_You may notice some latency related to hosting on **free tier** services._
-
 https://stimulus-reflex-todomvc.herokuapp.com
+
+_You may notice some latency related to hosting on **free tier** services._
 
 ## Code
 
