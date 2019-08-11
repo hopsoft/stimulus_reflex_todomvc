@@ -56,3 +56,4 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "redis"
 gem "stimulus_reflex"
+gem "rails_12factor", group: :production
