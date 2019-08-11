@@ -2,8 +2,6 @@ import { Controller } from 'stimulus';
 import StimulusReflex from 'stimulus_reflex';
 
 export default class extends Controller {
-  static targets = ['nate'];
-
   connect() {
     StimulusReflex.register(this);
   }
@@ -21,8 +19,8 @@ export default class extends Controller {
   }
 
   cancelEdit(event) {
-    if (event.code === 'Escape')
-      return this.stimulate('TodosReflex#cancel_edit');
+    if (event.type === 'keypress' && event.code !== 'Escape') return;
+    this.stimulate('TodosReflex#cancel_edit');
   }
 
   update() {
@@ -35,6 +33,10 @@ export default class extends Controller {
 
   toggle() {
     this.stimulate('TodosReflex#toggle', this.element.dataset.id);
+  }
+
+  toggleAll() {
+    this.stimulate('TodosReflex#toggle_all');
   }
 
   destroy() {

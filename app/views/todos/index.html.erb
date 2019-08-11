@@ -1,14 +1,17 @@
-<section id="todoapp" class="todoapp">
-  <header id="header" class="header">
+<section class="todoapp">
+  <header class="header">
     <h1>todos</h1>
-    <input class="new-todo" placeholder="What needs to be done?" autofocus data-controller="todos" data-action="change->todos#create">
+    <input class="new-todo" autofocus
+           placeholder="What needs to be done?"
+           data-controller="todos"
+           data-action="change->todos#create">
   </header>
 
   <% if @todos.present? %>
-    <section id="main" class="main">
-      <input id="toggle-all" class="toggle-all" type="checkbox" data-behavior="toggle-all">
-      <label id="toggle-all-label" for="toggle-all">Mark all as complete</label>
-      <ul id="todo-list" class="todo-list">
+    <section class="main">
+      <input class="toggle-all" type="checkbox">
+      <label data-controller="todos" data-action="click->todos#toggleAll">Mark all as complete</label>
+      <ul class="todo-list">
         <%= render partial: "todo", collection: @todos %>
       </ul>
     </section>

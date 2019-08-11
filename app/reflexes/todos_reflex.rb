@@ -1,6 +1,6 @@
 class TodosReflex < StimulusReflex::Reflex
   def filter(name)
-    @filter = name
+    session[:filter] = name
   end
 
   def create(title)
@@ -21,6 +21,11 @@ class TodosReflex < StimulusReflex::Reflex
 
   def toggle(id)
     Todo.find_by(session_id: session.id, id: id)&.toggle! :completed
+  end
+
+  def toggle_all
+    todos = Todo.where(session_id: session.id)
+    todos.update_all completed: todos.active.exists?
   end
 
   def destroy(id)

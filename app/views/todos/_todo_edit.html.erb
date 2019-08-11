@@ -3,6 +3,6 @@
          value="<%= todo.title %>"
          class="edit"
          data-controller="todos"
-         data-action="change->todos#update keypress->todos#cancelEdit"
+         data-action="change->todos#update keypress->todos#cancelEdit blur->todos#cancelEdit"
          data-id="<%= todo.id %>">
 </li>
