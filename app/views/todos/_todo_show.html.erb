@@ -1,0 +1,11 @@
+<li class="<%= "completed" if todo.completed? %>" data-controller="todos" data-id="<%= todo.id %>">
+  <div class="view">
+    <input type="checkbox" name="completed" class="toggle" data-action="click->todos#toggle">
+
+    <label data-action="click->todos#edit">
+      <%= todo.title %>
+    </label>
+
+    <button name="button" type="button" class="destroy" data-action="click->todos#destroy" />
+  </div>
+</li>

@@ -1,0 +1,5 @@
+<% if editing? todo %>
+  <%= render "todo_edit", todo: todo %>
+<% else %>
+  <%= render "todo_show", todo: todo %>
+<% end %>

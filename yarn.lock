@@ -968,6 +968,11 @@ acorn@^6.2.1:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-6.2.1.tgz#3ed8422d6dec09e6121cc7a843ca86a330a86b51"
   integrity sha512-JD0xT5FCRDNyjDda3Lrg/IxFscp9q4tiYtxE1/nOzlKCk7hIRuYjhq1kCNkbPjMRMZuFq20HNQn1I9k8Oj0E+Q==
 
+actioncable@^5.2.3:
+  version "5.2.3"
+  resolved "https://registry.yarnpkg.com/actioncable/-/actioncable-5.2.3.tgz#639d98855b854b7bfe2059ab97d6e0ae8fd60a1d"
+  integrity sha512-KNdZHRDu92VDSO7SOEJS8Bf5G//LZZLz5e6m7mv8Wjafe9Svdp/DPJ/DpO7rJmPAlKcLAYwi/R7pNJ/VCHV1FQ==
+
 ajv-errors@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/ajv-errors/-/ajv-errors-1.0.1.tgz#f35986aceb91afadec4102fbd85014950cefa64d"
@@ -1453,6 +1458,13 @@ bytes@3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/bytes/-/bytes-3.1.0.tgz#f6cf7933a360e0588fa9fde85651cdc7f805d1f6"
   integrity sha512-zauLjrfCG+xvoyaqLoV8bLVXXNGC4JqlxFCutSDWA6fJrTo2ZuvLYTqZ7aHBLZSMOopbzwv8f+wZcVzfVTI2Dg==
+
+cable_ready@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/cable_ready/-/cable_ready-4.0.2.tgz#3b5c968d400bf8f150cad008739410f4b857bc6c"
+  integrity sha512-06R3yqjcrTRrkUcG/Po6ZHdZo5Z2ChEjaCff/Y/YpI4Qlc1Ha4f3PF/2QD4nnww1EltUE9RPxsiUBdnGKzzARQ==
+  dependencies:
+    morphdom "^2.5.6"
 
 cacache@^11.2.0:
   version "11.3.3"
@@ -4187,6 +4199,11 @@ mkdirp@0.5.x, "mkdirp@>=0.5 0", mkdirp@^0.5, mkdirp@^0.5.0, mkdirp@^0.5.1, mkdir
   dependencies:
     minimist "0.0.8"
 
+morphdom@^2.5.6:
+  version "2.5.6"
+  resolved "https://registry.yarnpkg.com/morphdom/-/morphdom-2.5.6.tgz#85c59b36597a014d7107b09e0b836b3292086185"
+  integrity sha512-uw+fgVRCV7DK9EWJ87NeiFXTDdLklajJQNLHCAJStqTY/uwFpK5ormeU2PYSX5DDk+cI9dtFli/MHKd2wP/KGg==
+
 move-concurrently@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/move-concurrently/-/move-concurrently-1.0.1.tgz#be2c005fda32e0b29af1f05d7c4b33214c701f92"
@@ -6375,6 +6392,14 @@ stimulus@^1.1.1:
     "@stimulus/core" "^1.1.1"
     "@stimulus/webpack-helpers" "^1.1.1"
 
+stimulus_reflex@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/stimulus_reflex/-/stimulus_reflex-1.0.1.tgz#11a36236eab72b200f9bdae8b093c9af8efd35fe"
+  integrity sha512-RY8xjApPxcDy+jeVff5CK6Wx1nXnmSJxvVEeQ/yWD1N3Z/Xkg0tFuezEbsXeDsRZ+o/pTTkLBxqdCO2b93AQVg==
+  dependencies:
+    actioncable "^5.2.3"
+    cable_ready "^4.0.2"
+
 stream-browserify@^2.0.1:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/stream-browserify/-/stream-browserify-2.0.2.tgz#87521d38a44aa7ee91ce1cd2a47df0cb49dd660b"
@@ -6662,6 +6687,16 @@ to-regex@^3.0.1, to-regex@^3.0.2:
     extend-shallow "^3.0.2"
     regex-not "^1.0.2"
     safe-regex "^1.1.0"
+
+todomvc-app-css@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/todomvc-app-css/-/todomvc-app-css-2.2.0.tgz#6f84b15d9d4e0cf186679489fb236050c822de11"
+  integrity sha512-H03oc3QOxiGXv+MqnotcduZIwoGX8A8QbSx9J4U2Z5R96LrK+dvQmRDTgeCc0nlkPBhd3nUL4EbfS7l0TccM5g==
+
+todomvc-common@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/todomvc-common/-/todomvc-common-1.0.5.tgz#8c3e799ac9f1fc1573e0c204f984510826914730"
+  integrity sha512-D8kEJmxVMQIWwztEdH+WeiAfXRbbSCpgXq4NkYi+gduJ2tr8CNq7sYLfJvjpQ10KD9QxJwig57rvMbV2QAESwQ==
 
 toidentifier@1.0.0:
   version "1.0.0"
