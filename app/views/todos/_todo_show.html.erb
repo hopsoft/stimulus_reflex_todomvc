@@ -1,6 +1,6 @@
 <li class="<%= "completed" if todo.completed? %>" data-controller="todos" data-id="<%= todo.id %>">
   <div class="view">
-    <input type="checkbox" class="toggle" data-action="click->todos#toggle">
+    <input type="checkbox" class="toggle" data-action="click->todos#toggle" <%= "checked" if todo.completed? %>>
 
     <label data-action="click->todos#edit">
       <%= todo.title %>

@@ -10,7 +10,7 @@
   </ul>
 
   <% if @completed_count > 0 %>
-    <button class="clear-completed" data-action="click->todos#destroyCompleted">
+    <button class="clear-completed" data-controller="todos" data-action="click->todos#destroyCompleted">
       Clear completed
     </button>
   <% end %>

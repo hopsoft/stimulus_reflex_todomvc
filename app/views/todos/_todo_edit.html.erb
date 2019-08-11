@@ -1,7 +1,8 @@
 <li class="editing">
   <input type="text" autofocus
-         value="<%= todo.title %>"
          class="edit"
+         value="<%= todo.title %>"
+         <%= "checked" if todo.completed? %>
          data-controller="todos"
          data-action="change->todos#update keypress->todos#cancelEdit blur->todos#cancelEdit"
          data-id="<%= todo.id %>">
