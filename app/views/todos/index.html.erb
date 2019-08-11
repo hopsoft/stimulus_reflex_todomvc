@@ -1,6 +1,8 @@
 <section class="todoapp">
   <header class="header">
-    <h1>todos</h1>
+    <h1>
+      todos
+    </h1>
     <input autofocus class="new-todo" placeholder="What needs to be done?" data-controller="todos" data-action="change->todos#create">
   </header>
 
@@ -18,3 +20,9 @@
 
   <%= render "/todos/filters" if @all_todos.any? %>
 </section>
+
+<div style="position:relative; top:-10px; left:10px;">
+  <iframe src="https://ghbtns.com/github-btn.html?user=hopsoft&repo=stimulus_reflex_todomvc&type=star&count=true" frameborder="0" scrolling="0" style="width:90px; height:20px;"></iframe>
+  <iframe src="https://ghbtns.com/github-btn.html?user=hopsoft&repo=stimulus_reflex_todomvc&type=fork&count=true" frameborder="0" scrolling="0" style="width:90px; height:20px;"></iframe>
+  <iframe src="https://ghbtns.com/github-btn.html?user=hopsoft&type=follow&count=true" frameborder="0" scrolling="0" style="width:120px; height:20px;"></iframe>
+</div>
