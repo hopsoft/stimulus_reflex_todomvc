@@ -11,6 +11,37 @@ https://stimulus-reflex-todomvc.herokuapp.com
 
 _You may notice some latency related to hosting on **free tier** services._
 
+## Local Setup
+
+### Clone the repo
+
+```sh
+git clone https://github.com/hopsoft/stimulus_reflex_todomvc.git
+```
+
+### Switch into the project folder
+
+```sh
+cd stimulus_reflex_todomvc
+```
+
+### Run the setup command
+
+_Note: We use a PostgreSQL backed database. Make sure you are running Postgres on your machine._
+```sh
+bin/setup
+```
+
+### Start the rails server
+
+```sh
+bin/rails server
+```
+
+### See the app in action
+
+To see the application in action, open a browser window and navigate to http://localhost:3000. That's it!
+
 ## Code
 
 ### Diffs
