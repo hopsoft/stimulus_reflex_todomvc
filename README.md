@@ -3,7 +3,8 @@
 
 # StimulusReflex TodoMVC
 
-An implementation of [TodoMVC](http://todomvc.com) using [StimulusReflex](https://github.com/hopsoft/stimulus_reflex).
+An implementation of [TodoMVC](http://todomvc.com) using [Ruby on Rails](https://rubyonrails.org),
+[StimulusJS](https://stimulusjs.org), and [StimulusReflex](https://github.com/hopsoft/stimulus_reflex).
 
 Expands on the original goals of [TodoMVC](http://todomvc.com) by providing a full application...
 including a server and database.
