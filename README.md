@@ -48,7 +48,7 @@ _You may notice some latency related to hosting on **free tier** services._
 
 1. See the app in action
 
-    To see the application in action, open a browser window and navigate to http://localhost:3000. That's it!
+    Open a browser window and navigate to http://localhost:3000. __That's it!__
 
 ## Code
 
