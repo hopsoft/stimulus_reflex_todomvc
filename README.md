@@ -16,6 +16,12 @@ _You may notice some latency related to hosting on **free tier** services._
 
 ## Local Setup
 
+1. Install dependencies
+
+    - [Ruby](https://www.ruby-lang.org/en/downloads/)
+    - [Yarn](https://yarnpkg.com/lang/en/docs/install/#mac-stable)
+    - [PostgreSQL](https://www.postgresql.org/download/)
+
 1. Clone the repo
 
     ```sh
@@ -32,8 +38,6 @@ _You may notice some latency related to hosting on **free tier** services._
 
     ```sh
     bin/setup
-
-    _Note: We use a PostgreSQL backed database. Make sure you are running Postgres on your machine._
     ```
 
 1. Start the rails server
