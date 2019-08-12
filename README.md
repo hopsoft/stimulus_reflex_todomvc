@@ -44,17 +44,11 @@ To see the application in action, open a browser window and navigate to http://l
 
 ## Code
 
-### Diffs
-
-[Compare all changes](https://github.com/hopsoft/stimulus_reflex_todomvc/compare/9e1c0b3...master) since running:
-
-```
-rails new --database=postgresql --webpack=stimulus stimulus_reflex_todomvc
-```
-
 ### Important Files
 
 - [HTML Templates](https://github.com/hopsoft/stimulus_reflex_todomvc/tree/master/app/views/todos)
 - [Rails Controller](https://github.com/hopsoft/stimulus_reflex_todomvc/blob/master/app/controllers/todos_controller.rb)
 - [Stimulus Controller](https://github.com/hopsoft/stimulus_reflex_todomvc/blob/master/app/javascript/controllers/todos_controller.js)
 - [Stimulus Reflex](https://github.com/hopsoft/stimulus_reflex_todomvc/blob/master/app/reflexes/todos_reflex.rb)
+
+[View a diff with all changes.](https://github.com/hopsoft/stimulus_reflex_todomvc/compare/9e1c0b3...master)
