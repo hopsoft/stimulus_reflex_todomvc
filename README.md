@@ -3,7 +3,7 @@
 
 # StimulusReflex TodoMVC
 
-Implemenation of [TodoMVC](http://todomvc.com) using [StimulusReflex](https://github.com/hopsoft/stimulus_reflex).
+An implementation of [TodoMVC](http://todomvc.com) using [StimulusReflex](https://github.com/hopsoft/stimulus_reflex).
 
 Expands on the original goals of [TodoMVC](http://todomvc.com) by providing a full application...
 including a server and database.
@@ -48,7 +48,7 @@ _You may notice some latency related to hosting on **free tier** services._
 
 1. See the app in action
 
-    Open a browser window and navigate to http://localhost:3000. __That's it!__
+    To see the application in action, open a browser window and navigate to http://localhost:3000. That's it!
 
 ## Code
 
