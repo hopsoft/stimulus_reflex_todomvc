@@ -61,3 +61,9 @@ _You may notice some latency related to hosting on **free tier** services._
 - [Stimulus Reflex](https://github.com/hopsoft/stimulus_reflex_todomvc/blob/master/app/reflexes/todos_reflex.rb)
 
 [View a diff with all changes.](https://github.com/hopsoft/stimulus_reflex_todomvc/compare/9e1c0b3...master)
+
+## Contributing
+
+This project uses [Standard](https://github.com/testdouble/standard)
+and [Prettier](https://github.com/prettier/prettier) to minimize bike shedding related to code formatting.
+Please run `./bin/standardize` prior submitting pull requests.
