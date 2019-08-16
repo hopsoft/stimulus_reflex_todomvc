@@ -1,15 +1,15 @@
-<section class="todoapp">
+<section class="todoapp" data-controller="todos">
   <header class="header">
     <h1>
       todos
     </h1>
-    <input autofocus class="new-todo" placeholder="What needs to be done?" data-controller="todos" data-action="change->todos#create">
+    <input autofocus class="new-todo" placeholder="What needs to be done?" data-reflex="todos#create" data-reflex-value>
   </header>
 
   <% if @all_todos.any? %>
     <section class="main">
       <input class="toggle-all" type="checkbox">
-      <label data-controller="todos" data-action="click->todos#toggleAll">
+      <label data-reflex="todos#toggle_all">
         Mark all as complete
       </label>
       <ul class="todo-list">

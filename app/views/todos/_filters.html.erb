@@ -5,24 +5,24 @@
 
   <ul class="filters">
     <li>
-      <a class="<%= "selected" if @filter == "all" %>" data-controller="todos" data-action="click->todos#filter" data-name="all">
+      <a class="<%= "selected" if @filter == "all" %>" data-reflex="todos#filter" data-reflex-name="all">
         All
       </a>
     </li>
     <li>
-      <a class="<%= "selected" if @filter == "active" %>" data-controller="todos" data-action="click->todos#filter" data-name="active">
+      <a class="<%= "selected" if @filter == "active" %>" data-reflex="todos#filter" data-reflex-name="active">
         Active
       </a>
     </li>
     <li>
-      <a class="<%= "selected" if @filter == "completed" %>" data-controller="todos" data-action="click->todos#filter" data-name="completed">
+      <a class="<%= "selected" if @filter == "completed" %>" data-reflex="todos#filter" data-reflex-name="completed">
         Completed
       </a>
     </li>
   </ul>
 
   <% if @all_todos.completed.any? %>
-    <button class="clear-completed" data-controller="todos" data-action="click->todos#destroyCompleted">
+    <button class="clear-completed" data-reflex="todos#destroy_completed">
       Clear completed
     </button>
   <% end %>
