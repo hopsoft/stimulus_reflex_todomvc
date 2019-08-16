@@ -182,7 +182,7 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    stimulus_reflex (1.0.1)
+    stimulus_reflex (1.0.2)
       actioncable (>= 5.2.3)
       actionpack (>= 5.2.3)
       cable_ready (>= 4.0.1)
