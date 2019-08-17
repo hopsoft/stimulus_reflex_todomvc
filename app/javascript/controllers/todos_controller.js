@@ -24,11 +24,7 @@ export default class extends Controller {
   }
 
   update() {
-    this.stimulate(
-      'TodosReflex#update',
-      this.element.dataset.id,
-      this.element.value
-    );
+    this.stimulate('TodosReflex#update', this.element.dataset.id, this.element.value);
   }
 
   toggle() {
