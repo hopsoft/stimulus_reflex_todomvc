@@ -5,19 +5,13 @@
 
   <ul class="filters">
     <li>
-      <a class="<%= "selected" if @filter == "all" %>" data-controller="todos" data-action="click->todos#filter" data-name="all">
-        All
-      </a>
+      <%= link_to "All", "#", class: filter_css(:all), data: { controller: "filter", action: "click->filter#apply", filter: "all" } %>
     </li>
     <li>
-      <a class="<%= "selected" if @filter == "active" %>" data-controller="todos" data-action="click->todos#filter" data-name="active">
-        Active
-      </a>
+      <%= link_to "Active", "#", class: filter_css(:active), data: { controller: "filter", action: "click->filter#apply", filter: "active" } %>
     </li>
     <li>
-      <a class="<%= "selected" if @filter == "completed" %>" data-controller="todos" data-action="click->todos#filter" data-name="completed">
-        Completed
-      </a>
+      <%= link_to "Completed", "#", class: filter_css(:completed), data: { controller: "filter", action: "click->filter#apply", filter: "completed" } %>
     </li>
   </ul>
 
