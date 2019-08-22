@@ -1,4 +1,4 @@
-[![Lines of Code - app directory](http://img.shields.io/badge/lines_of_code-219-brightgreen.svg?style=flat)](http://blog.codinghorror.com/the-best-code-is-no-code-at-all/)
+[![Lines of Code - app directory](http://img.shields.io/badge/lines_of_code-234-brightgreen.svg?style=flat)](http://blog.codinghorror.com/the-best-code-is-no-code-at-all/)
 [![Maintainability](https://api.codeclimate.com/v1/badges/e00a9353bc3d2a7edfbd/maintainability)](https://codeclimate.com/github/hopsoft/stimulus_reflex_todomvc/maintainability)
 
 # StimulusReflex TodoMVC
