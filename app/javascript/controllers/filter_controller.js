@@ -1,3 +1,4 @@
+import Rails from '@rails/ujs';
 import { Controller } from 'stimulus';
 import StimulusReflex from 'stimulus_reflex';
 
@@ -6,11 +7,8 @@ export default class extends Controller {
     StimulusReflex.register(this);
   }
 
-  toggleAll() {
-    this.stimulate('TodosReflex#toggle_all');
-  }
-
-  destroyCompleted() {
-    this.stimulate('TodosReflex#destroy_completed');
+  apply(event) {
+    Rails.stopEverything(event);
+    this.stimulate('FilterReflex#apply', this.element.dataset.filter);
   }
 }

@@ -1,7 +1,7 @@
 class TodosController < ApplicationController
   def index
-    @filter ||= session[:filter] || "all"
+    session[:filter] ||= "all"
     @all_todos = Todo.where(session_id: session.id)
-    @filtered_todos = @all_todos.send(@filter).order(created_at: :desc)
+    @filtered_todos = @all_todos.send(session[:filter]).order(:created_at)
   end
 end
