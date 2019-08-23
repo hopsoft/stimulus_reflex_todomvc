@@ -19,37 +19,37 @@ _You may notice some latency related to hosting on **free tier** services._
 
 1. Install dependencies
 
-    - [Ruby](https://www.ruby-lang.org/en/downloads/)
-    - [Yarn](https://yarnpkg.com/lang/en/docs/install/#mac-stable)
-    - [PostgreSQL](https://www.postgresql.org/download/)
+   - [Ruby](https://www.ruby-lang.org/en/downloads/)
+   - [Yarn](https://yarnpkg.com/lang/en/docs/install/#mac-stable)
+   - [PostgreSQL](https://www.postgresql.org/download/)
 
 1. Clone the repo
 
-    ```sh
-    git clone https://github.com/hopsoft/stimulus_reflex_todomvc.git
-    ```
+   ```sh
+   git clone https://github.com/hopsoft/stimulus_reflex_todomvc.git
+   ```
 
 1. Switch into the project folder
 
-    ```sh
-    cd stimulus_reflex_todomvc
-    ```
+   ```sh
+   cd stimulus_reflex_todomvc
+   ```
 
-1.  Run the setup command
+1. Run the setup command
 
-    ```sh
-    bin/setup
-    ```
+   ```sh
+   bin/setup
+   ```
 
 1. Start the rails server
 
-    ```sh
-    bin/rails server
-    ```
+   ```sh
+   bin/rails server
+   ```
 
 1. See the app in action
 
-    To see the application in action, open a browser window and navigate to http://localhost:3000. That's it!
+   To see the application in action, open a browser window and navigate to http://localhost:3000. That's it!
 
 ## Code
 
