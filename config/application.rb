@@ -15,7 +15,7 @@ module StimulusReflexTodomvc
     # helpers, and stylesheets will not be created
     config.generators do |g|
       g.template_engine nil
-      g.test_framework  nil
+      g.test_framework nil
       g.assets false
       g.helper false
       g.stylesheets false
