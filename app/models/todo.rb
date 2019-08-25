@@ -16,7 +16,6 @@ class Todo < ApplicationRecord
 
   scope :completed, -> { where completed: true }
   scope :active, -> { where completed: false }
-  scope :older_than_two_weeks, -> { where "created_at <= ?", 2.weeks.ago.to_datetime }
 
   def active?
     !completed?
