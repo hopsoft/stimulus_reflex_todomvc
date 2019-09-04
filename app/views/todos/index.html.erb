@@ -1,9 +1,9 @@
-<section class="todoapp" data-controller="todos">
+<section class="todoapp" data-controller="todo">
   <header class="header">
     <h1>
       todos
     </h1>
-    <input autofocus class="new-todo" placeholder="What needs to be done?" data-reflex="todos#create" data-reflex-value>
+    <input autofocus class="new-todo" placeholder="What needs to be done?" data-reflex="todo#create" data-reflex-value>
   </header>
 
   <% if @all_todos.any? %>

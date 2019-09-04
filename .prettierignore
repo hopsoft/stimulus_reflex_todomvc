@@ -1,0 +1,9 @@
+/node_modules/
+/test/
+/vendor/
+/bin/
+/log/
+/tmp/
+**/*.rb
+/public/
+yarn.lock

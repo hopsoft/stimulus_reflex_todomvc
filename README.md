@@ -1,5 +1,6 @@
-[![Lines of Code - app directory](http://img.shields.io/badge/lines_of_code-219-brightgreen.svg?style=flat)](http://blog.codinghorror.com/the-best-code-is-no-code-at-all/)
+[![Lines of Code - app directory](http://img.shields.io/badge/lines_of_code-234-brightgreen.svg?style=flat)](http://blog.codinghorror.com/the-best-code-is-no-code-at-all/)
 [![Maintainability](https://api.codeclimate.com/v1/badges/e00a9353bc3d2a7edfbd/maintainability)](https://codeclimate.com/github/hopsoft/stimulus_reflex_todomvc/maintainability)
+[![Ruby Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://github.com/testdouble/standard)
 
 # StimulusReflex TodoMVC
 
@@ -19,37 +20,37 @@ _You may notice some latency related to hosting on **free tier** services._
 
 1. Install dependencies
 
-    - [Ruby](https://www.ruby-lang.org/en/downloads/)
-    - [Yarn](https://yarnpkg.com/lang/en/docs/install/#mac-stable)
-    - [PostgreSQL](https://www.postgresql.org/download/)
+   - [Ruby](https://www.ruby-lang.org/en/downloads/)
+   - [Yarn](https://yarnpkg.com/lang/en/docs/install/#mac-stable)
+   - [PostgreSQL](https://www.postgresql.org/download/)
 
 1. Clone the repo
 
-    ```sh
-    git clone https://github.com/hopsoft/stimulus_reflex_todomvc.git
-    ```
+   ```sh
+   git clone https://github.com/hopsoft/stimulus_reflex_todomvc.git
+   ```
 
 1. Switch into the project folder
 
-    ```sh
-    cd stimulus_reflex_todomvc
-    ```
+   ```sh
+   cd stimulus_reflex_todomvc
+   ```
 
-1.  Run the setup command
+1. Run the setup command
 
-    ```sh
-    bin/setup
-    ```
+   ```sh
+   bin/setup
+   ```
 
 1. Start the rails server
 
-    ```sh
-    bin/rails server
-    ```
+   ```sh
+   bin/rails server
+   ```
 
 1. See the app in action
 
-    To see the application in action, open a browser window and navigate to http://localhost:3000. That's it!
+   To see the application in action, open a browser window and navigate to http://localhost:3000. That's it!
 
 ## Code
 
@@ -61,3 +62,9 @@ _You may notice some latency related to hosting on **free tier** services._
 - [Stimulus Reflex](https://github.com/hopsoft/stimulus_reflex_todomvc/blob/master/app/reflexes/todos_reflex.rb)
 
 [View a diff with all changes.](https://github.com/hopsoft/stimulus_reflex_todomvc/compare/9e1c0b3...master)
+
+## Contributing
+
+This project uses [Standard](https://github.com/testdouble/standard)
+and [Prettier](https://github.com/prettier/prettier) to minimize bike shedding related to code formatting.
+Please run `./bin/standardize` prior submitting pull requests.

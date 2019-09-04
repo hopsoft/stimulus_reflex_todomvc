@@ -5,19 +5,13 @@
 
   <ul class="filters">
     <li>
-      <a class="<%= "selected" if @filter == "all" %>" data-reflex="todos#filter" data-reflex-name="all">
-        All
-      </a>
+      <%= link_to "All", "#", class: filter_css(:all), data: { reflex: "filter#apply", "reflex-filter": "all" } %>
     </li>
     <li>
-      <a class="<%= "selected" if @filter == "active" %>" data-reflex="todos#filter" data-reflex-name="active">
-        Active
-      </a>
+      <%= link_to "Active", "#", class: filter_css(:active), data: { reflex: "filter#apply", "reflex-filter": "active" } %>
     </li>
     <li>
-      <a class="<%= "selected" if @filter == "completed" %>" data-reflex="todos#filter" data-reflex-name="completed">
-        Completed
-      </a>
+      <%= link_to "Completed", "#", class: filter_css(:completed), data: { reflex: "filter#apply", "reflex-filter": "completed" } %>
     </li>
   </ul>
 
