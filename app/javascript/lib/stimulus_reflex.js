@@ -69,7 +69,7 @@ const extend = controller => {
         select: 'change',
         textarea: 'change'
       }
-      document.querySelectorAll('[data-reflex]').forEach(el => {
+      controller.element.querySelectorAll('[data-reflex]').forEach(el => {
         const tagName = el.tagName.toLowerCase()
         let event = events[tagName]
         if (/^\w+->\w+#\w+$/.test(el.dataset.reflex)) {
@@ -83,8 +83,14 @@ const extend = controller => {
     }
   })
 
-  document.addEventListener('cable-ready:before-morph', controller.wire)
-  document.addEventListener('cable-ready:after-morph', controller.wire)
+  controller.element.addEventListener(
+    'cable-ready:before-morph',
+    controller.wire
+  )
+  controller.element.addEventListener(
+    'cable-ready:after-morph',
+    controller.wire
+  )
 
   controller.wire()
 }
