@@ -11,7 +11,7 @@ gem "webpacker", "~> 4.0"
 gem "turbolinks", "~> 5"
 gem "jbuilder", "~> 2.7"
 gem "redis", "~> 4.0"
-gem "stimulus_reflex", ">= 1.0.2"
+gem "stimulus_reflex", ">= 1.1.1"
 gem "rails_12factor", group: :production
 gem "bootsnap", ">= 1.4.2", require: false
 
