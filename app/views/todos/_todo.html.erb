@@ -1,19 +1,16 @@
 <% if todo.id == @edit_id %>
   <li class="editing">
-    <input autofocus type="text" class="edit" value="<%= todo.title %>"
-      data-stimulus="change" data-reflex="TodosReflex#update" data-id="<%= todo.id %>">
+    <input autofocus type="text" class="edit" value="<%= todo.title %>" data-reflex="change->TodosReflex#update" data-id="<%= todo.id %>">
   </li>
 <% else %>
   <li class="<%= "completed" if todo.completed? %>"
-    data-stimulus="click" data-reflex="TodosReflex#edit" data-id="<%= todo.id %>">
+      data-reflex="click->TodosReflex#edit" data-id="<%= todo.id %>">
     <div class="view">
-      <input <%= "checked" if todo.completed? %> type="checkbox" class="toggle"
-        data-stimulus="change" data-reflex="TodosReflex#toggle" data-id="<%= todo.id %>">
+      <input <%= "checked" if todo.completed? %> type="checkbox" class="toggle" data-reflex="change->TodosReflex#toggle" data-id="<%= todo.id %>">
       <label data-action="click->todo#edit">
         <%= todo.title %>
       </label>
-      <button name="button" type="button" class="destroy"
-        data-stimulus="click" data-reflex="TodosReflex#destroy" data-id="<%= todo.id %>"/>
+      <button name="button" type="button" class="destroy" data-reflex="click->TodosReflex#destroy" data-id="<%= todo.id %>"/>
     </div>
   </li>
 <% end %>
