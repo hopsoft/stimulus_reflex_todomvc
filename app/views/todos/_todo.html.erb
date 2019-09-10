@@ -4,7 +4,8 @@
       data-stimulus="change" data-reflex="TodosReflex#update" data-id="<%= todo.id %>">
   </li>
 <% else %>
-  <li class="<%= "completed" if todo.completed? %>" >
+  <li class="<%= "completed" if todo.completed? %>"
+    data-stimulus="click" data-reflex="TodosReflex#edit" data-id="<%= todo.id %>">
     <div class="view">
       <input <%= "checked" if todo.completed? %> type="checkbox" class="toggle"
         data-stimulus="change" data-reflex="TodosReflex#toggle" data-id="<%= todo.id %>">

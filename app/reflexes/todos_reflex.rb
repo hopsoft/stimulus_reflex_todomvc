@@ -3,12 +3,8 @@ class TodosReflex < StimulusReflex::Reflex
     Todo.create session_id: session.id, title: options[:value]
   end
 
-  def edit(id)
-    @edit_id = id.to_i
-  end
-
-  def cancel_edit
-    @edit_id = nil
+  def edit(options: {})
+    @edit_id = options.dataset[:id].to_i
   end
 
   def update(options: {})
