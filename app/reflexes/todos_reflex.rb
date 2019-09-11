@@ -7,6 +7,10 @@ class TodosReflex < StimulusReflex::Reflex
     @edit_id = element.dataset[:id].to_i
   end
 
+  def cancel_edit
+    @edit_id = nil
+  end
+
   def update
     Todo.find_by(session_id: session.id, id: element.dataset[:id])&.update title: element[:value]
   end
