@@ -6387,7 +6387,7 @@ stdout-stream@^1.4.0:
   dependencies:
     readable-stream "^2.0.1"
 
-stimulus@^1.1.1:
+"stimulus@>= 1.1.1", stimulus@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/stimulus/-/stimulus-1.1.1.tgz#53c2fded6849e7b85eed3ed8dd76e33abd74bec5"
   integrity sha512-R0mBqKp48YnRDZOxZ8hiOH4Ilph3Yj78CIFTBkCwyHs4iGCpe7xlEdQ7cjIxb+7qVCSxFKgxO+mAQbsNgt/5XQ==
@@ -6395,13 +6395,14 @@ stimulus@^1.1.1:
     "@stimulus/core" "^1.1.1"
     "@stimulus/webpack-helpers" "^1.1.1"
 
-stimulus_reflex@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/stimulus_reflex/-/stimulus_reflex-1.0.2.tgz#c3ab71c57dbdf8423d13df0e85a27d509adb3dff"
-  integrity sha512-aTpblkRdZRKv2U7I0mLwQI350Ch7xwi9RjczpbaOmjPyd5CwttABg+4tmJjrfeQPZDpTN+zs8w0BCycM6O8BUA==
+stimulus_reflex@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/stimulus_reflex/-/stimulus_reflex-2.0.0.tgz#74737011943e64af11f0f9ad53a7ec3ce713cb50"
+  integrity sha512-nD8Fqom/k5dNzKOl51oujyZp+KyzCxn17C97hBbvkdAbO2rVIKrpm21kDfJdD8F8NmBLkePDd/HQdBR51KQqaA==
   dependencies:
     actioncable ">= 5.2"
     cable_ready ">= 4.0.3"
+    stimulus ">= 1.1.1"
 
 stream-browserify@^2.0.1:
   version "2.0.2"
