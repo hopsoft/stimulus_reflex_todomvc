@@ -3,7 +3,6 @@ import StimulusReflex from 'stimulus_reflex';
 
 export default class extends Controller {
   connect() {
-    console.log('connected....');
     StimulusReflex.register(this);
   }
 
