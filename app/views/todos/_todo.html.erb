@@ -1,16 +1,18 @@
 <% if todo.id == @edit_id %>
   <li class="editing">
-    <input autofocus type="text" class="edit" value="<%= todo.title %>" <%= "checked" if todo.completed? %>
-      data-controller="todo" data-action="change->todo#update keypress->todo#cancelEdit blur->todo#cancelEdit" data-id="<%= todo.id %>">
+    <input autofocus type="text" class="edit" value="<%= todo.title %>"
+      data-controller="todos" data-action="keypress->todos#cancelEdit blur->todos#cancelEdit"
+      data-reflex="change->TodosReflex#update" data-id="<%= todo.id %>">
   </li>
 <% else %>
-  <li class="<%= "completed" if todo.completed? %>" data-controller="todo" data-id="<%= todo.id %>">
+  <li class="<%= "completed" if todo.completed? %>"
+      data-reflex="click->TodosReflex#edit" data-id="<%= todo.id %>">
     <div class="view">
-      <input type="checkbox" class="toggle" data-action="click->todo#toggle" <%= "checked" if todo.completed? %>>
-      <label data-action="click->todo#edit">
+      <input <%= "checked" if todo.completed? %> type="checkbox" class="toggle" data-reflex="change->TodosReflex#toggle" data-id="<%= todo.id %>">
+      <label>
         <%= todo.title %>
       </label>
-      <button name="button" type="button" class="destroy" data-action="click->todo#destroy" />
+      <button name="button" type="button" class="destroy" data-reflex="click->TodosReflex#destroy" data-id="<%= todo.id %>"/>
     </div>
   </li>
 <% end %>
