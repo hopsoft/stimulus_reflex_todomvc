@@ -1,7 +1,7 @@
 <% if todo.id == @edit_id %>
   <li class="editing">
     <input autofocus type="text" class="edit" value="<%= todo.title %>"
-      data-controller="todos" data-action="keypress->todos#cancelEdit blur->todos#cancelEdit"
+      data-action="keydown->todos#cancelEdit blur->todos#cancelEdit"
       data-reflex="change->TodosReflex#update" data-id="<%= todo.id %>">
   </li>
 <% else %>

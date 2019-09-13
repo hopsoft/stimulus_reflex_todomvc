@@ -6,8 +6,10 @@ export default class extends Controller {
     StimulusReflex.register(this);
   }
 
-  cancelEdit(event) {
-    if (event.type === 'keypress' && event.code !== 'Escape') return;
+  cancelEdit (event) {
+    if (event.type === 'keydown' && !['Escape', 'Esc'].includes(event.key)) {
+      return
+    }
     this.stimulate('TodosReflex#cancel_edit');
   }
 }
