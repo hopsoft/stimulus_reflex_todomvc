@@ -5,10 +5,12 @@ class TodosReflex < StimulusReflex::Reflex
 
   def edit
     @edit_id = element.dataset[:id].to_i
+    # @callback = "onEdit" # not necessary
   end
 
   def cancel_edit
     @edit_id = nil
+    # @callback = "iChangedMyMind"
   end
 
   def update
@@ -30,6 +32,7 @@ class TodosReflex < StimulusReflex::Reflex
 
   def destroy_completed
     Todo.where(session_id: session.id, completed: true).destroy_all
+    # @redirect = "https://youtube.com" # done work for the day
   end
 
   def filter
