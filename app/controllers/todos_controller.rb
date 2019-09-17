@@ -3,5 +3,7 @@ class TodosController < ApplicationController
     session[:filter] ||= "all"
     @all_todos = Todo.where(session_id: session.id)
     @filtered_todos = @all_todos.send(session[:filter]).order(:created_at)
+    session.delete "init"
+    @api_status ||= :default
   end
 end

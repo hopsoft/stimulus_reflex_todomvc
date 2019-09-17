@@ -13,3 +13,88 @@
  *= require_tree .
  *= require_self
  */
+.numeric {
+  position: absolute;
+  top: -15px;
+  left: 40px;
+  z-index: 2
+}
+
+.big {
+  font-size: 120px;
+}
+
+.bump {
+  margin-top: 180px
+}
+
+.credits {
+  position: relative;
+  top: 30px;
+  left: 10px;
+}
+
+.ghbtn {
+  height: 20px;
+}
+
+.button {
+  -webkit-appearance: button;
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  color: buttontext;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start;
+  cursor: default;
+  background-color: buttonface;
+  box-sizing: border-box;
+  margin: 0em;
+  font: 400 13.3333px Arial;
+  padding: 1px 6px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: buttonface;
+  border-image: initial;
+}
+
+.clicker-wrapper {
+  display: grid;
+  grid-template-columns: 33% 33% 34%;
+  grid-template-rows: 25px;
+}
+
+.clicker-wrapper .item1 {
+  grid-column: 1;
+}
+
+.clicker-wrapper .item2 {
+  grid-column: 2;
+}
+
+.clicker-wrapper .item3 {
+  grid-column: 3;
+  text-align: center;
+}
+
+.counter-wrapper {
+  display: grid;
+  grid-template-columns: 10% 20% 20% 50%;
+  grid-template-rows: 100px 25px 100px;
+}
+
+.counter-wrapper .item1 {
+  grid-column: 4;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.counter-wrapper .item2 {
+  grid-column: 2;
+  grid-row: 2;
+}

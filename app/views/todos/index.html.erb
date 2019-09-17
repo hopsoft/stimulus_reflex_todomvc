@@ -1,8 +1,6 @@
 <section class="todoapp" data-controller="todos">
   <header class="header">
-    <h1>
-      todos
-    </h1>
+    <h1>todos</h1>
     <input <%= "autofocus " unless @edit_id %>class="new-todo" placeholder="What needs to be done?" data-reflex="change->TodosReflex#create">
   </header>
 
@@ -21,9 +19,50 @@
   <%= render "/todos/filters" if @all_todos.any? %>
 </section>
 
-<div style="position:relative; top:-10px; left:10px;">
-  <iframe src="https://ghbtns.com/github-btn.html?user=hopsoft&repo=stimulus_reflex_todomvc&type=star&count=true" frameborder="0" scrolling="0" style="height:20px;"></iframe>
-  <iframe src="https://ghbtns.com/github-btn.html?user=hopsoft&repo=stimulus_reflex_todomvc&type=fork&count=true" frameborder="0" scrolling="0" style="height:20px;"></iframe>
-  <iframe src="https://ghbtns.com/github-btn.html?user=hopsoft&type=follow&count=true" frameborder="0" scrolling="0" style="height:20px;"></iframe>
-  <iframe src="https://ghbtns.com/github-btn.html?user=andrewmcodes&type=follow&count=true" frameborder="0" scrolling="0" style="height:20px;"></iframe>
+<section class="todoapp bump">
+  <header class="header">
+    <h1>no reflex</h1>
+  </header>
+  <section class="main">    
+    <input type="text" class="edit" value="type stuff here, it'll be fine">
+  </section>
+</section>
+
+<section class="todoapp bump" data-controller="clicker">
+  <header class="header">
+    <h1>clicker</h1>
+  </header>
+  <section class="main">
+    <h2 class="numeric big"><%= Rails.cache.fetch("clicks:#{session.id}") {0} %></h2>
+    <%= image_tag "nightclub-security-doorman-training.jpg", width: 550, height: 412.5 %>
+  </section>
+  <section class="clicker-wrapper">
+    <button class="button item1" data-reflex="click->ClickerReflex#increment">Inc</button>
+    <button class="button item2" data-reflex="click->ClickerReflex#decrement">Dec</button>
+    <% case @api_status %>
+    <% when :default %>
+      <button class="button item3" data-reflex="click->ClickerReflex#api">Call 911</button>
+    <% when :loading %>
+      <span class="item3"><em>Waiting...</em></span>
+    <% when :ready %>
+      <span class="item3"><strong class="item3">Arrived!</strong></span>
+    <% end %>
+  </section>
+</section>
+
+<section class="todoapp bump" data-controller="counter">
+  <header class="header">
+    <h1>counter</h1>
+  </header>
+  <section class="main counter-wrapper">    
+    <h2 class="big item1"><%= Rails.cache.fetch("timer:#{session.id}") {0} %></h2>
+    <button class="button item2" data-reflex="click->CounterReflex#stopwatch"><%= session[:clock] ? "Stop" : "Start" %></button>
+  </section>
+</section>
+
+<div class="credits">
+  <iframe src="https://ghbtns.com/github-btn.html?user=hopsoft&repo=stimulus_reflex_todomvc&type=star&count=true" frameborder="0" scrolling="0" class="ghbtn"></iframe>
+  <iframe src="https://ghbtns.com/github-btn.html?user=hopsoft&repo=stimulus_reflex_todomvc&type=fork&count=true" frameborder="0" scrolling="0" class="ghbtn"></iframe>
+  <iframe src="https://ghbtns.com/github-btn.html?user=hopsoft&type=follow&count=true" frameborder="0" scrolling="0" class="ghbtn"></iframe>
+  <iframe src="https://ghbtns.com/github-btn.html?user=andrewmcodes&type=follow&count=true" frameborder="0" scrolling="0" class="ghbtn"></iframe>
 </div>
