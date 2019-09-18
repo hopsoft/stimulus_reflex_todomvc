@@ -32,7 +32,7 @@ class TodosReflex < StimulusReflex::Reflex
     Todo.where(session_id: session.id, completed: true).destroy_all
   end
 
-  def filter
-    session[:filter] = element.dataset[:filter]
+  def filter(value)
+    session[:filter] = value
   end
 end

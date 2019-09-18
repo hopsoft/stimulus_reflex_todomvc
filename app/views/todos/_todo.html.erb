@@ -2,7 +2,7 @@
   <li class="editing">
     <input type="text" class="edit" value="<%= todo.title %>"
       data-controller="autofocus"
-      data-action="keydown->todos#update keydown->todos#cancelEdit blur->todos#cancelEdit"
+      data-action="keydown->todos#cancelEdit blur->todos#cancelEdit"
       data-reflex="change->TodosReflex#update" data-id="<%= todo.id %>">
   </li>
 <% else %>
