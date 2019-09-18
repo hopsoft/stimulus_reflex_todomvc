@@ -1,12 +1,13 @@
 <% if todo.id == @edit_id %>
   <li class="editing">
-    <input autofocus type="text" class="edit" value="<%= todo.title %>"
-      data-action="keydown->todos#cancelEdit blur->todos#cancelEdit"
+    <input type="text" class="edit" value="<%= todo.title %>"
+      data-controller="autofocus"
+      data-action="keydown->todos#update keydown->todos#cancelEdit blur->todos#cancelEdit"
       data-reflex="change->TodosReflex#update" data-id="<%= todo.id %>">
   </li>
 <% else %>
   <li class="<%= "completed" if todo.completed? %>"
-      data-reflex="click->TodosReflex#edit" data-id="<%= todo.id %>">
+      data-reflex="dblclick->TodosReflex#edit" data-id="<%= todo.id %>">
     <div class="view">
       <input <%= "checked" if todo.completed? %> type="checkbox" class="toggle" data-reflex="change->TodosReflex#toggle" data-id="<%= todo.id %>">
       <label>
