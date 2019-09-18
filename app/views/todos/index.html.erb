@@ -3,13 +3,13 @@
     <h1>
       todos
     </h1>
-    <input <%= "autofocus " unless @edit_id %>class="new-todo" placeholder="What needs to be done?" data-reflex="change->TodosReflex#create">
+    <input <%= "autofocus " unless @edit_id %>class="new-todo" placeholder="What needs to be done?" data-reflex="change->TodosReflex#create" data-room="<%= session.id %>">
   </header>
 
   <% if @all_todos.any? %>
     <section class="main">
       <input class="toggle-all" type="checkbox">
-      <label data-reflex="click->TodosReflex#toggle_all">
+      <label data-reflex="click->TodosReflex#toggle_all" data-room="<%= session.id %>">
         Mark all as complete
       </label>
       <ul class="todo-list">
