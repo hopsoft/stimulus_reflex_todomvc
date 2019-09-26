@@ -22,7 +22,7 @@ export default class extends Controller {
     }
   }
 
-  afterCreate(inpu) {
+  afterCreate() {
     this.highlight(this.lastListItem);
   }
 
