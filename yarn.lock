@@ -968,11 +968,6 @@ acorn@^6.2.1:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-6.3.0.tgz#0087509119ffa4fc0a0041d1e93a417e68cb856e"
   integrity sha512-/czfa8BwS88b9gWQVhc8eknunSA2DoJpJyTQkhheIf5E48u1N0R4q/YxxsAeqRrmK9TQ/uYfgLDfZo91UlANIA==
 
-"actioncable@>= 5.2":
-  version "5.2.3"
-  resolved "https://registry.yarnpkg.com/actioncable/-/actioncable-5.2.3.tgz#639d98855b854b7bfe2059ab97d6e0ae8fd60a1d"
-  integrity sha512-KNdZHRDu92VDSO7SOEJS8Bf5G//LZZLz5e6m7mv8Wjafe9Svdp/DPJ/DpO7rJmPAlKcLAYwi/R7pNJ/VCHV1FQ==
-
 ajv-errors@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/ajv-errors/-/ajv-errors-1.0.1.tgz#f35986aceb91afadec4102fbd85014950cefa64d"
@@ -1458,13 +1453,6 @@ bytes@3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/bytes/-/bytes-3.1.0.tgz#f6cf7933a360e0588fa9fde85651cdc7f805d1f6"
   integrity sha512-zauLjrfCG+xvoyaqLoV8bLVXXNGC4JqlxFCutSDWA6fJrTo2ZuvLYTqZ7aHBLZSMOopbzwv8f+wZcVzfVTI2Dg==
-
-"cable_ready@>= 4.0.3":
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/cable_ready/-/cable_ready-4.0.3.tgz#3ce960da4150162d68f8b20172978f6d2aa83c08"
-  integrity sha512-F+yUa1/yvGEHSMHJ97m0srwd4IirvaZbkLMIjWaE7OV+RPI/u62Lv7cJr0A0fNK2hDzDiAV8VUAzXGDAKIIOjA==
-  dependencies:
-    morphdom "^2.5.6"
 
 cacache@^11.2.0:
   version "11.3.3"
@@ -4233,11 +4221,6 @@ mkdirp@0.5.x, "mkdirp@>=0.5 0", mkdirp@^0.5, mkdirp@^0.5.0, mkdirp@^0.5.1, mkdir
   dependencies:
     minimist "0.0.8"
 
-morphdom@^2.5.6:
-  version "2.5.6"
-  resolved "https://registry.yarnpkg.com/morphdom/-/morphdom-2.5.6.tgz#85c59b36597a014d7107b09e0b836b3292086185"
-  integrity sha512-uw+fgVRCV7DK9EWJ87NeiFXTDdLklajJQNLHCAJStqTY/uwFpK5ormeU2PYSX5DDk+cI9dtFli/MHKd2wP/KGg==
-
 move-concurrently@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/move-concurrently/-/move-concurrently-1.0.1.tgz#be2c005fda32e0b29af1f05d7c4b33214c701f92"
@@ -6435,22 +6418,13 @@ stdout-stream@^1.4.0:
   dependencies:
     readable-stream "^2.0.1"
 
-"stimulus@>= 1.1.1", stimulus@^1.1.1:
+stimulus@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/stimulus/-/stimulus-1.1.1.tgz#53c2fded6849e7b85eed3ed8dd76e33abd74bec5"
   integrity sha512-R0mBqKp48YnRDZOxZ8hiOH4Ilph3Yj78CIFTBkCwyHs4iGCpe7xlEdQ7cjIxb+7qVCSxFKgxO+mAQbsNgt/5XQ==
   dependencies:
     "@stimulus/core" "^1.1.1"
     "@stimulus/webpack-helpers" "^1.1.1"
-
-stimulus_reflex@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/stimulus_reflex/-/stimulus_reflex-2.0.0.tgz#74737011943e64af11f0f9ad53a7ec3ce713cb50"
-  integrity sha512-nD8Fqom/k5dNzKOl51oujyZp+KyzCxn17C97hBbvkdAbO2rVIKrpm21kDfJdD8F8NmBLkePDd/HQdBR51KQqaA==
-  dependencies:
-    actioncable ">= 5.2"
-    cable_ready ">= 4.0.3"
-    stimulus ">= 1.1.1"
 
 stream-browserify@^2.0.1:
   version "2.0.2"
@@ -6992,6 +6966,11 @@ vary@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
+
+velocity-animate@^1.5.2:
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/velocity-animate/-/velocity-animate-1.5.2.tgz#5a351d75fca2a92756f5c3867548b873f6c32105"
+  integrity sha512-m6EXlCAMetKztO1ppBhGU1/1MR3IiEevO6ESq6rcrSQ3Q77xYSW13jkfXW88o4xMrkXJhy/U7j4wFR/twMB0Eg==
 
 vendors@^1.0.0:
   version "1.0.3"
