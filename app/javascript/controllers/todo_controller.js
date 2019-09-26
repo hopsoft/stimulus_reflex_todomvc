@@ -7,6 +7,11 @@ export default class extends ApplicationController {
     this.stimulate('TodosReflex#cancel_edit');
   }
 
+  afterCreate() {
+    const listItems = document.querySelector('ul.todo-list').querySelectorAll('li');
+    this.highlight(listItems[listItems.length - 1]);
+  }
+
   afterToggle() {
     this.highlight(this.element);
   }
