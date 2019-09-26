@@ -16,7 +16,7 @@
   </ul>
 
   <% if @all_todos.completed.any? %>
-    <button class="clear-completed" data-controller="todo" data-reflex="click->TodosReflex#destroy_completed" data-room="<%= session.id %>">
+    <button class="clear-completed" data-reflex="click->TodosReflex#destroy_completed" data-room="<%= session.id %>">
       Clear completed
     </button>
   <% end %>

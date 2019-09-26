@@ -1,12 +1,12 @@
 <% if todo.id == @edit_id %>
-  <li class="editing" data-controller="todo">
+  <li class="editing">
     <input autofocus type="text" class="edit" value="<%= todo.title %>"
+      data-controller="todos"
       data-action="keydown->todo#cancelEdit blur->todo#cancelEdit"
       data-reflex="change->TodosReflex#update" data-id="<%= todo.id %>" data-room="<%= session.id %>">
   </li>
 <% else %>
   <li class="<%= "completed" if todo.completed? %>"
-      data-controller="todo"
       data-reflex="click->TodosReflex#edit"
       data-id="<%= todo.id %>"
       data-room="<%= session.id %>">
