@@ -2,7 +2,7 @@
   "name": "stimulus_reflex_todomvc",
   "private": true,
   "scripts": {
-    "prettier-fix": "yarn run prettier --write --config ./prettier.config.js '**/*.{js,jsx,json,css,yaml,yml,md}'"
+    "prettier-fix": "yarn run prettier-standard '**/*.{js,jsx,json,css,yaml,yml,md}'"
   },
   "dependencies": {
     "@rails/actioncable": "^6.0.0-alpha",
@@ -17,7 +17,7 @@
   },
   "version": "0.1.0",
   "devDependencies": {
-    "prettier": "1.18.2",
+    "prettier-standard": "^14.0.7",
     "webpack-dev-server": "^3.8.0"
   }
 }

@@ -2,15 +2,15 @@ import { Controller } from 'stimulus';
 import StimulusReflex from 'stimulus_reflex';
 
 export default class extends Controller {
-  connect() {
+  connect () {
     StimulusReflex.register(this);
   }
 
-  beforeReflex() {
+  beforeReflex () {
     document.body.classList.add('wait');
   }
 
-  afterReflex() {
+  afterReflex () {
     document.body.classList.remove('wait');
 
     const focusElement = this.element.querySelector('[autofocus]');
