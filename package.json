@@ -2,7 +2,8 @@
   "name": "stimulus_reflex_todomvc",
   "private": true,
   "scripts": {
-    "prettier-fix": "yarn run prettier --write --config ./prettier.config.js '**/*.{js,jsx,json,css,yaml,yml,md}'"
+    "prettier-fix": "yarn run prettier --write --config ./prettier.config.js 'app/*.js'",
+    "prettier-check": "yarn run prettier --check --config ./prettier.config.js 'app/*.js'"
   },
   "dependencies": {
     "@rails/actioncable": "^6.0.0-alpha",
