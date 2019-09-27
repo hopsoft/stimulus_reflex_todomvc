@@ -11,7 +11,7 @@
       <label data-reflex="click->TodosReflex#toggle_all" data-room="<%= session.id %>">
         Mark all as complete
       </label>
-      <ul class="todo-list" data-target="visual-effects.list">
+      <ul class="todo-list" data-target="todos.list">
         <%= render partial: "todo", collection: @filtered_todos %>
       </ul>
     </section>
