@@ -2,5 +2,6 @@
 
 echo "======== running standardrb ========"
 bundle exec standardrb --fix
+
 echo "======== running prettier ========"
 yarn prettier-fix
