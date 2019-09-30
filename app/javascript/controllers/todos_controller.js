@@ -5,7 +5,7 @@ export default class extends ApplicationController {
   static targets = ['list'];
 
   cancelEdit (event) {
-    if (event.type === 'keydown' && !['Escape', 'Esc'].includes(event.key)) return;
+    if (event.type === 'keyup' && !['Escape', 'Esc'].includes(event.key)) return;
     this.stimulate('TodosReflex#cancel_edit');
   }
 
@@ -22,7 +22,7 @@ export default class extends ApplicationController {
   }
 
   highlight (element) {
-    Velocity(element, { scale: 1.01, backgroundColor: '#ffff99' }, 200).then(
+    Velocity(element, { scale: 1.01, backgroundColor: '#ff9' }, 200).then(
       Velocity(element, { scale: 1, backgroundColor: '#fff' }, 600)
     );
   }
