@@ -20,7 +20,7 @@
   <%= render "/todos/filters" if @all_todos.any? %>
 </section>
 
-<input type="text" value="<%= @words %>" data-reflex-root="[forward],[backward]" data-reflex="keyup->WordsReflex#words">
+<input type="text" value="<%= @words %>" data-controller="application" data-reflex-root="[forward],[backward]" data-reflex="keyup->WordsReflex#words">
 <section class="todoapp" forward><%= @words || rand(1000) %></section>
 <section class="todoapp" backward><%= @words&.reverse || rand(1000) %></section>
 
