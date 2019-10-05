@@ -1,4 +1,4 @@
-<section class="todoapp" data-controller="todos">
+<section class="todoapp" data-controller="todos" data-reflex-root="[todos]" todos>
   <header class="header">
     <h1><small><%= truncate "#{session[:filter]} todos", length: 12 %></small></h1>
     <input <%= "autofocus " unless @edit_id %> class="new-todo" placeholder="What needs to be done?"
@@ -19,6 +19,10 @@
 
   <%= render "/todos/filters" if @all_todos.any? %>
 </section>
+
+<input type="text" value="<%= @words %>" data-controller="application" data-reflex-root="[forward],[backward]" data-reflex="keyup->WordsReflex#words">
+<section class="todoapp" forward><%= @words || rand(1000) %></section>
+<section class="todoapp" backward><%= @words&.reverse || rand(1000) %></section>
 
 <div style="position:relative; top:-10px; left:10px;">
   <iframe src="https://ghbtns.com/github-btn.html?user=hopsoft&repo=stimulus_reflex_todomvc&type=star&count=true" frameborder="0" scrolling="0" style="height:20px;"></iframe>
