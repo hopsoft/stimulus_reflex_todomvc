@@ -5,15 +5,12 @@
     "prettier-fix": "yarn run prettier-standard '**/*.{js,jsx,json,css,yaml,yml,md}'"
   },
   "dependencies": {
-    "@rails/actioncable": "^6.0.0-alpha",
-    "@rails/activestorage": "^6.0.0-alpha",
-    "@rails/ujs": "^6.0.0-alpha",
+    "@rails/actioncable": "^6.0.0",
     "@rails/webpacker": "^4.0.7",
     "stimulus": "^1.1.1",
     "stimulus_reflex": "^2.1.0",
     "todomvc-app-css": "^2.2.0",
     "todomvc-common": "^1.0.5",
-    "turbolinks": "^5.2.0",
     "velocity-animate": "^1.5.2"
   },
   "version": "0.1.0",

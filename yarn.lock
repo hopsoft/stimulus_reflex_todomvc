@@ -701,22 +701,10 @@
     "@nodelib/fs.scandir" "2.1.2"
     fastq "^1.6.0"
 
-"@rails/actioncable@^6.0.0-alpha":
+"@rails/actioncable@^6.0.0":
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/@rails/actioncable/-/actioncable-6.0.0.tgz#8bff9c902be1531ef7a9e191562e9771efcfdfe1"
   integrity sha512-DieouotYHpI6k2EGTCnh1eMvD3W8p3zqjWXEYj4z0khJ+A0qQ5tHxihjTEkio54MVwqHt1DcpUm2woh2n/alCA==
-
-"@rails/activestorage@^6.0.0-alpha":
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/@rails/activestorage/-/activestorage-6.0.0.tgz#6d9cc98f3dcf195c38ca65e80acd2e759336dd7a"
-  integrity sha512-RZqTVlUYSWcI88pSJ7ImuTtDYQvqVc2PNuOo+5R3hcVupD+d2TO8xmluqQ5TvByjPqKX4acEK0mjEIK5ip9kCg==
-  dependencies:
-    spark-md5 "^3.0.0"
-
-"@rails/ujs@^6.0.0-alpha":
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/@rails/ujs/-/ujs-6.0.0.tgz#6c1957870ba075f7e82fdf875f5ed2181ff9355e"
-  integrity sha512-0oh/MnpZzluItU/vgaxZv+JtMXxOtA0HPK6ZiMoPd2sLH06q58QdCKPVlC36YMnP4451rcrvxO6xns3w97C1og==
 
 "@rails/webpacker@^4.0.7":
   version "4.0.7"
@@ -7149,11 +7137,6 @@ source-map@^0.6.0, source-map@^0.6.1, source-map@~0.6.1:
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
   integrity sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
 
-spark-md5@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/spark-md5/-/spark-md5-3.0.0.tgz#3722227c54e2faf24b1dc6d933cc144e6f71bfef"
-  integrity sha1-NyIifFTi+vJLHcbZM8wUTm9xv+8=
-
 spdx-correct@^3.0.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/spdx-correct/-/spdx-correct-3.1.0.tgz#fb83e504445268f154b074e218c87c003cd31df4"
@@ -7632,9 +7615,9 @@ to-regex@^3.0.1, to-regex@^3.0.2:
     safe-regex "^1.1.0"
 
 todomvc-app-css@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/todomvc-app-css/-/todomvc-app-css-2.2.0.tgz#6f84b15d9d4e0cf186679489fb236050c822de11"
-  integrity sha512-H03oc3QOxiGXv+MqnotcduZIwoGX8A8QbSx9J4U2Z5R96LrK+dvQmRDTgeCc0nlkPBhd3nUL4EbfS7l0TccM5g==
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/todomvc-app-css/-/todomvc-app-css-2.3.0.tgz#cc27f1686ab4c418eef4e790289cc124baca2546"
+  integrity sha512-RG8hxqoVn8Be3wxyuyHfOSAXiY1Z0N+PYQOe/jxzy3wpU1Obfwd1RF1i/fz/fR+MrYL+Q+BdrUt8SsXdtR7Oow==
 
 todomvc-common@^1.0.5:
   version "1.0.5"
@@ -7692,11 +7675,6 @@ tunnel-agent@^0.6.0:
   integrity sha1-J6XeoGs2sEoKmWZ3SykIaPD8QP0=
   dependencies:
     safe-buffer "^5.0.1"
-
-turbolinks@^5.2.0:
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/turbolinks/-/turbolinks-5.2.0.tgz#e6877a55ea5c1cb3bb225f0a4ae303d6d32ff77c"
-  integrity sha512-pMiez3tyBo6uRHFNNZoYMmrES/IaGgMhQQM+VFF36keryjb5ms0XkVpmKHkfW/4Vy96qiGW3K9bz0tF5sK9bBw==
 
 tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   version "0.14.5"

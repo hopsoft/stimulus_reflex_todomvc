@@ -8,9 +8,14 @@ export default class extends Controller {
 
   beforeReflex () {
     document.body.classList.add('wait')
+    this.benchmark = performance.now()
   }
 
-  afterReflex () {
+  afterReflex (element, reflex) {
+    console.debug(
+      reflex,
+      `${(performance.now() - this.benchmark).toFixed(0)}ms`
+    )
     document.body.classList.remove('wait')
 
     const focusElement = this.element.querySelector('[autofocus]')

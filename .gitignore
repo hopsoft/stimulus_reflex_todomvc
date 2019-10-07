@@ -29,3 +29,7 @@
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+
+.vscode/
+Procfile.dev
+TAGS
