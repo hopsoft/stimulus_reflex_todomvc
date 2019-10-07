@@ -10,7 +10,7 @@
     "@rails/ujs": "^6.0.0-alpha",
     "@rails/webpacker": "^4.0.7",
     "stimulus": "^1.1.1",
-    "stimulus_reflex": "^2.0.2",
+    "stimulus_reflex": "^2.1.0",
     "todomvc-app-css": "^2.2.0",
     "todomvc-common": "^1.0.5",
     "turbolinks": "^5.2.0",

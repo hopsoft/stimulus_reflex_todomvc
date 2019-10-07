@@ -11,7 +11,7 @@ gem "rails", "~> 6.0.0"
 gem "rails_12factor", group: :production
 gem "redis", "~> 4.0"
 gem "sass-rails", "~> 6"
-gem "stimulus_reflex", "~> 2.0.2"
+gem "stimulus_reflex", "~> 2.1.0"
 gem "turbolinks", "~> 5"
 gem "webpacker", "~> 4.0"
 
