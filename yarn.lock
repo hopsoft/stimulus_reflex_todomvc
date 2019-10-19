@@ -4830,9 +4830,9 @@ mkdirp@0.5.x, "mkdirp@>=0.5 0", mkdirp@^0.5, mkdirp@^0.5.0, mkdirp@^0.5.1, mkdir
     minimist "0.0.8"
 
 morphdom@^2.5.9:
-  version "2.5.9"
-  resolved "https://registry.yarnpkg.com/morphdom/-/morphdom-2.5.9.tgz#f4a0916af9e73dd7aa0fca9119b924c4c08990c6"
-  integrity sha512-dRsv6iD9XP9Ysz9qaJFhOO5cS8rwgOJXqSdIQOvh6/yWl69S7mKndouzDsQn7bSCs1fkNe/dtfy0nMUjGVcjnw==
+  version "2.5.10"
+  resolved "https://registry.yarnpkg.com/morphdom/-/morphdom-2.5.10.tgz#12534d81794277c65b11fca8e132aeceeff354e1"
+  integrity sha512-pSTQQjICC6LEFHMAD19u8oTRE+P4DTkmw4c0NzfePcuvw663TZVYw/YKXemOfLsgUrDVmnYRf+kJmIAzaqIfIA==
 
 move-concurrently@^1.0.1:
   version "1.0.1"
@@ -7254,9 +7254,9 @@ stdout-stream@^1.4.0:
     "@stimulus/webpack-helpers" "^1.1.1"
 
 stimulus_reflex@^2.1.2:
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/stimulus_reflex/-/stimulus_reflex-2.1.2.tgz#420f812f64769d7ead8d983e2eaeca60bbee7818"
-  integrity sha512-vQOWYdzUXQw2bqnYCw/YAqKmtxSzR+YZjYmMm8Bo3l6Zfi9DqkmjLx5Z20uhjDEZMyvdJBoq3vzfM4zS9S+Kcw==
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/stimulus_reflex/-/stimulus_reflex-2.1.4.tgz#a5ff760822d79d4f8fc1f1cc5550ab4b7ef4b0da"
+  integrity sha512-4M7M9OiA9sy7pDeuQWSEfpbyzxbLXIQozbHA8NymQLC5dua4qfpieoB5lyq+UFMslsSuLiNcqnlSm4lyPxuxew==
   dependencies:
     actioncable ">= 5.2"
     cable_ready ">= 4.0.7"
